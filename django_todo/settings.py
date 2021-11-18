@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-
+from pathlib import Path
 import os
 import dj_database_url
 
@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-usa5bjp9l$*626+$c*4m1%(adpi=l5+70+=37drnlk+c$2x%%r')
+SECRET_KEY =  os.environ.get('SECRET_KEY','django-insecure-usa5bjp9l$*626+$c*4m1%(adpi=l5+70+=37drnlk+c$2x%%r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
